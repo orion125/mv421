@@ -9,23 +9,23 @@ package com.mycompany.mv421;
  *
  * @author JonathanCapitao
  */
-public class Des {
-   private int value;
+public class Dice {
+    private int value;
 
     public int getValue() {
         return value;
     }
 
-    public Des() {
+    public Dice() {
     }
 
-    public Des(int value) {
+    public Dice(int value) {
         this.value = value;
     }
 
     @Override
     public boolean equals(Object obj) {
-        return ((Des)obj).getValue() == this.getValue();
+        return ((Dice)obj).getValue() == this.getValue();
     }
    
    

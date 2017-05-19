@@ -12,22 +12,29 @@ import java.util.ArrayList;
  * @author JonathanCapitao
  */
 public class Turn {
-    ArrayList<Des> gameDices;
+    private ArrayList<Dice> gameDices;
 
-    public Turn(ArrayList<Des>  gameDices) {
+    public Turn(ArrayList<Dice>  gameDices) {
         this.gameDices = gameDices;
     }
     
      public Turn(int[]  gameDices) {
         this.gameDices = new ArrayList<>();
         for (int i : gameDices)
-            this.gameDices.add(new Des(i));
+            this.gameDices.add(new Dice(i));
     }
     
     public boolean isGameWon(){
-        return (gameDices.contains(new Des(4)) &&
-            gameDices.contains(new Des(2)) &&    
-            gameDices.contains(new Des(1)));
+        return (gameDices.contains(new Dice(4)) &&
+            gameDices.contains(new Dice(2)) &&    
+            gameDices.contains(new Dice(1)));
+    }
+
+    public Turn() {
+    }
+
+    public ArrayList<Dice> getGameDices() {
+        return gameDices;
     }
     
 }
