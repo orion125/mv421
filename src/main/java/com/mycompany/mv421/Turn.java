@@ -11,11 +11,17 @@ import java.util.ArrayList;
  *
  * @author JonathanCapitao
  */
-public class Game {
+public class Turn {
     ArrayList<Des> gameDices;
 
-    public Game(ArrayList<Des>  gameDices) {
+    public Turn(ArrayList<Des>  gameDices) {
         this.gameDices = gameDices;
+    }
+    
+     public Turn(int[]  gameDices) {
+        this.gameDices = new ArrayList<>();
+        for (int i : gameDices)
+            this.gameDices.add(new Des(i));
     }
     
     public boolean isGameWon(){
