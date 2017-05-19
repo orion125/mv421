@@ -18,21 +18,22 @@ public class Game {
         this.gameTurns = gameTurns;
     }
     
-    public void gameSequence(){
-        for (Turn t : gameTurns)
+    public boolean gameSequence(){
+        for (Turn t : gameTurns){
             if (t.isGameWon()){
                 System.out.println("Tour gagner : "
                         +t.getGameDices().get(0) + " "
                         +t.getGameDices().get(1) + " "
                         +t.getGameDices().get(2));
-                return;
+                return true;
             }else {
                 System.out.println("Tour perdu : "
                         +t.getGameDices().get(0) + " "
                         +t.getGameDices().get(1) + " "
                         +t.getGameDices().get(2));
             }
-            
+        }    
+        return false;
     }
     
 }
