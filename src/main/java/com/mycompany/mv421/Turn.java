@@ -1,16 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.mv421;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author JonathanCapitao
- */
 public class Turn {
     private ArrayList<Dice> gameDices;
 
@@ -25,9 +16,8 @@ public class Turn {
     }
     
     public boolean isGameWon(){
-        return (gameDices.contains(new Dice(4)) &&
-            gameDices.contains(new Dice(2)) &&    
-            gameDices.contains(new Dice(1)));
+        Rules.testVictory(gameDices);
+        return Rules.victory();
     }
 
     public Turn() {

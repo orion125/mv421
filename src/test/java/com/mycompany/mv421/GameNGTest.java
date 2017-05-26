@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.mv421;
 
 import java.util.ArrayList;
@@ -13,10 +8,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-/**
- *
- * @author JonathanCapitao
- */
 public class GameNGTest {
     // variable pour les tests
         int[] test = {4,2,1};
@@ -36,18 +27,7 @@ public class GameNGTest {
         ArrayList<Turn> testTurns4 = new ArrayList<>();
         ArrayList<Turn> testTurns5 = new ArrayList<>();
         ArrayList<Turn> testTurns6 = new ArrayList<>();
-            
-    public GameNGTest() {
-    }
-
-    @BeforeClass
-    public static void setUpClass() throws Exception {
-    }
-
-    @AfterClass
-    public static void tearDownClass() throws Exception {
-    }
-
+ 
     @BeforeMethod
     public void setUpMethod() throws Exception {
         massTurnPourTest.add(new Turn(test));
@@ -78,9 +58,6 @@ public class GameNGTest {
         testTurns6.add(massTurnPourTest.get(3));
     }
 
-    @AfterMethod
-    public void tearDownMethod() throws Exception {
-    }
 
     /**
      * Test of gameSequence method, of class Game.
