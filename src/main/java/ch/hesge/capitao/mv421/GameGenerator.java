@@ -1,4 +1,4 @@
-package com.mycompany.mv421;
+package ch.hesge.capitao.mv421;
 
 import java.util.ArrayList;
 import java.util.Random;

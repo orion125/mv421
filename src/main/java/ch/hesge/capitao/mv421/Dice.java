@@ -1,4 +1,4 @@
-package com.mycompany.mv421;
+package ch.hesge.capitao.mv421;
 
 public class Dice {
     public final static int MAX = 6;
