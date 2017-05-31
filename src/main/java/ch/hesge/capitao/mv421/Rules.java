@@ -13,15 +13,18 @@ import java.util.ArrayList;
  */
 public class Rules {
     
+    
     public static ArrayList<Boolean> victoryConditions = new ArrayList<Boolean>();
     
     public static final int NB_TURN = 3;
     
-    public static void testVictory(ArrayList<Dice> gameDices){
+    public static void createVictoryConditionForDices(ArrayList<Dice> gameDices){
         victoryConditions = new ArrayList<Boolean>();
-        victoryConditions.add((gameDices.contains(new Dice(4)) &&
+        victoryConditions.add(
+                gameDices.contains(new Dice(4)) &&
                 gameDices.contains(new Dice(2)) &&
-                gameDices.contains(new Dice(1))));
+                gameDices.contains(new Dice(1))
+        );
         
     }
     

@@ -27,7 +27,7 @@ public class Turn {
     }
     
     public boolean isGameWon(){
-        Rules.testVictory(gameDices);
+        Rules.createVictoryConditionForDices(gameDices);
         return Rules.victory();
     }
 
