@@ -25,6 +25,11 @@ public class Rules {
                 gameDices.contains(new Dice(2)) &&
                 gameDices.contains(new Dice(1))
         );
+        victoryConditions.add( // rule 555
+                gameDices.get(0).getValue() == 5 &&
+                gameDices.get(1).getValue() == 5 &&
+                gameDices.get(2).getValue() == 5 
+        );
         
     }
     
