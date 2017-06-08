@@ -13,6 +13,7 @@ public class RulesNGTest {
     
     ArrayList<Dice> gameDicesWin = new ArrayList<>();
     ArrayList<Dice> gameDicesWin2 = new ArrayList<>();
+    ArrayList<Dice> gameDicesWin3 = new ArrayList<>();
     ArrayList<Dice> gameDicesLost = new ArrayList<>();
     ArrayList<Dice> gameDicesLost2 = new ArrayList<>();
     
@@ -38,6 +39,7 @@ public class RulesNGTest {
         
         gameDicesWin.add(d4);gameDicesWin.add(d2);gameDicesWin.add(d1);
         gameDicesWin2.add(d2);gameDicesWin2.add(d4);gameDicesWin2.add(d1);
+        gameDicesWin2.add(d5);gameDicesWin2.add(d5);gameDicesWin2.add(d5);
         
         gameDicesLost.add(d2);gameDicesLost.add(d4);gameDicesLost.add(d4);
         gameDicesLost2.add(d3);gameDicesLost2.add(d6);gameDicesLost2.add(d5);
